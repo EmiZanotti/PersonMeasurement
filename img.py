@@ -34,6 +34,7 @@ boxes = np.array([[x, y, x + w, y + h] for (x, y, w, h) in boxes])
 for (xA, yA, xB, yB) in boxes:
     # display the detected boxes in the colour picture
     cv2.rectangle(frame, (xA, yA), (xB, yB), (0, 255, 0), 2)
+    print(xA, xB, yA, yB)
 
 
 cv2.imshow('frame',frame)
